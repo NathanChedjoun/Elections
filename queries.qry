@@ -1,0 +1,31 @@
+
+
+query selectPvByParty {
+  description:"Get the list of Pvs of a party"
+  statement:
+    SELECT org.cloud.elections.Pv
+    WHERE (scrutineer.partyNumber == _$partyNumber)
+}
+
+query selectPvByPollingStation {
+  description:"Get the list of Pvs of a polling station"
+  statement:
+    SELECT org.cloud.elections.Pv
+    WHERE (pollingStation == _$pollingStation)
+}
+
+
+query selectPvByScrutineerName {
+  description:"Get the list of Pvs of a particular scrutineer"
+  statement:
+    SELECT org.cloud.elections.Pv
+    WHERE (scrutineer.scrutineerName == _$scrutineerName)
+}
+
+
+query selectScrutineerByPartyNumber {
+  description:"Get a scrutineer by his party number"
+  statement:
+    SELECT org.cloud.elections.Scrutineer
+    WHERE (partyNumber == _$partyNumber)
+}
