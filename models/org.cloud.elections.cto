@@ -24,6 +24,8 @@ asset Pv identified by pvId {
   o Integer numberOfSuscribers
   o Integer numberOfVoters
   o Integer[] voices
+  o String partyNumber
+  o String scrutineerName
   --> Scrutineer scrutineer
 }
 

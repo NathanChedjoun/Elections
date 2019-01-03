@@ -3,7 +3,7 @@
     "composer": "^0.20.5"
   },
   "name": "elections",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "description": "Projet Cloud Computing",
   "scripts": {
     "prepublish": "mkdirp ./dist && composer archive create --sourceType dir --sourceName . -a ./dist/elections.bna",
